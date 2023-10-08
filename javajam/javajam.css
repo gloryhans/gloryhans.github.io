@@ -1,37 +1,96 @@
 body {
     background-color: #FCEBB6;
+    background-image: url("images/fadedroad50.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #221811;
     font-family: Tahoma, Arial, sans-serif;
+}
+
+main {
+    padding-left: 2em;
+    padding-bottom: 2em;
+    padding-right: 2em;
+    display: block;
 }
 
 header {
     background-color: #D2B48C;
     color: #8C3826;
     text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 h1 {
-    line-height: 200%;
+    font-size: 3em ;
 }
 
 h2 {
-    color: #8C3826; 
+    color:#8C3826; 
+}
+
+h3 {
+    color:#8C3826;
+}
+
+h4 {
+    background-color: #D2B48C;
+    font-size: 1.2em;
+    padding-left: .5em;
+    padding-bottom: .25em;
 }
 
 nav {
     font-weight: bold;
     text-align: center;
+    font-size: 1.5em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.homehero {
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+details {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+img {
+    border-style: none;
+    max-width: 100%;
+    height: auto;
 }
 
 footer {
     background-color: #D2B48C;
-    font-size: .60;
+    font-size: .60em;
+    padding: 1em;
+    border-top-style: solid; 
+    border-top-color: #8C3826;
+    border-top-width: 2px;
     font-style: italic;
     text-align: center;
 }
 
+dt {
+    color:#8C3826;
+}
+
 #wrapper {
     background-color: #FEFAEB;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: 10px 10px 30px #221811;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
