@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #FCEBB6;
     background-image: url("images/fadedroad50.jpg");
@@ -8,18 +12,32 @@ body {
 }
 
 main {
-    padding-left: 2em;
+    background-color: #FEF6C2;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 2em;
-    padding-right: 2em;
+    padding-top: 0;
+    margin-left: 200px;
     display: block;
+    overflow: auto;
 }
 
 header {
     background-color: #D2B48C;
-    color: #8C3826;
-    text-align: center;
+    background-image: url("images/coffeelogo.jpg");
+    background-repeat: no-repeat;
+    color: #231814;
     padding-top: 5px;
     padding-bottom: 5px;
+    padding-left: 240px;
+}
+
+header a:link, a:visited {
+    color: #231814
+}
+
+header a:hover {
+    color: #FEF6C2
 }
 
 h1 {
@@ -27,42 +45,102 @@ h1 {
 }
 
 h2 {
-    color:#8C3826; 
+    padding-left: 3em;
+    padding-right: 2em;
+    color:#8C3826 
 }
 
 h3 {
+    padding-left: 3em;
+    padding-right: 2em;
     color:#8C3826;
 }
 
 h4 {
+    padding-left: 3em;
+    padding-right: 2em;
+    padding-bottom: 0;
     background-color: #D2B48C;
     font-size: 1.2em;
-    padding-left: .5em;
-    padding-bottom: .25em;
+    text-transform: capitalize;
+    border-bottom-style: solid; 
+    border-bottom-color: #8C3826;
+    border-bottom-width: 2px;
+    clear: left;
+}
+
+p, div, ul, dl {
+    padding-left: 3em;
+    padding-right: 2em;
 }
 
 nav {
     font-weight: bold;
     text-align: center;
-    font-size: 1.5em;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    font-size: 1.5em; 
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
+    float: left;
+    width: 200 px;
+}
+
+#leftnav {
+    list-style-type: none;
+    padding-left: 0;
 }
 
 nav a {
     text-decoration: none;
 }
 
+nav a:link {
+    color: #FEF6C2;
+}
+
+nav a:visited {
+    color: #D2B48C;
+}
+
+nav a:hover {
+    color: #cc9933;
+}
+
 .homehero {
     background-image: url("images/hero.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
     height: 300px;
     background-repeat: no-repeat;
+}
+
+.heromugs {
+    background-image: url("images/heromugs.jpg");
+    background-size: 100% 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+.heroguitar {
+    background-image: url("images/heroguitar.jpg");
+    background-size: 100% 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+.floatleft {
+    float: left;
+    padding-bottom: 2em;
+    padding-right: 2em;
 }
 
 details {
     padding-left: 20%;
     padding-right: 20%;
+    overflow: auto;
+}
+
+.onethird {
+    width: 33%;
+    float: left;
 }
 
 img {
@@ -87,11 +165,12 @@ dt {
 }
 
 #wrapper {
-    background-color: #FEFAEB;
+    background-color: #231814;
     min-width: 900px;
     max-width: 1280px;
     box-shadow: 10px 10px 30px #221811;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    padding: 0;
 }
