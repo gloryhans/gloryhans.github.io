@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Education - Gloria Hansen</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Gloria Hansen</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Education</h1>
+        <ul>
+            <li>
+                <strong>Degree Name</strong> - University Name, Graduation Year
+            </li>
+            <li>
+                <strong>Another Degree Name</strong> - Another University, Another Year
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector("header");
+            if (window.scrollY > 100) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        });
+    </script>
+
+</body>
+</html>
