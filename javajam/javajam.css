@@ -174,3 +174,40 @@ dt {
     width: 80%;
     padding: 0;
 }
+
+
+#herojobs {
+    height: 300px;
+    background-image: url("images/coffeecup.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 80%;
+}
+
+input, textarea {
+    margin-bottom: 0.5em;
+}
+
+@media (min-width: 320px) {
+    #herojobs {
+        background-image: url("images/herojobs.jpg");
+    }
+
+    form {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 6em 1fr;
+        width: 40%;
+    }
+
+    input[type="submit"] {
+        grid-column: 2;
+        width: 9em;
+    }
+}
