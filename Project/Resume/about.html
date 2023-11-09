@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" href="https://fonts.googleapis.com/css?family=League+Gothic">
     <title>About Me - Gloria Hansen</title>
 </head>
+
 <body>
     <header>
+        <h1 id="altered-text">Gloria Hansen</h1>
         <nav>
-            <div class="logo">Gloria Hansen</div>
+            <div class="logo">
+                <img src="images/logo.png" alt="logo image">
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="experience.html">Experience</a></li>
             </ul>
+            <a class="icon-link" href="images/Gloria Hansen-Resume '23 copy.pdf" download>
+                <img src="images/resume.png" alt="Icon">
+            </a>
         </nav>
     </header>
 
     <div class="container">
-        <h1>About Me</h1>
+        <h2>About Me</h2>
         <p>Write a brief description about yourself here.</p>
     </div>
-
-    <script>
-        window.addEventListener("scroll", function() {
-            const header = document.querySelector("header");
-            if (window.scrollY > 100) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        });
-    </script>
-
 </body>
+
 </html>

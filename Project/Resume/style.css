@@ -10,9 +10,11 @@ body {
 }
 
 header {
-    background-color: #424B54;
-    color: #fffff2;
-    padding: 10px 0;
+    background-color: #fffff2;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
 }
 
 header.sticky {
@@ -20,26 +22,21 @@ header.sticky {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #424B54;
     z-index: 100;
     transition: background-color 0.3s;
 }
 
 nav {
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    font-size: 1.5rem;
-    margin-left: 20px;
+    border-top: 1px solid #80A1C1;
 }
 
 ul {
     list-style: none;
     display: flex;
-    margin-right: 20px;
 }
 
 li {
@@ -47,19 +44,36 @@ li {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fffff2;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: 'League Gothic';
+    color: #678D58;
+}
+
+h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2rem;
     color: #424B54;
+}
+
+h1, h2, nav a {
+    font-family: 'League Gothic', sans-serif;
+    text-transform: uppercase;
+}
+
+#altered-text {
+    transform: scaleY(1.8);
+    letter-spacing: .15em;
 }
 
 p {
@@ -68,43 +82,57 @@ p {
 }
 
 nav a {
-    color: #fffff2;
+    color: #80A1C1;
     text-decoration: none;
     font-weight: 600;
-    font-size: 20px;
-    transition: color 0.5s;
+    font-size: 22px;
 }
 
 nav a:hover {
-    color: #80A1C1;
+    color: #678D58;
+    transition: color .5s;
 }
 
 .container {
-    border: 1px solid #ddd;
     padding: 30px;
 }
 
-.container ul {
-    padding: 0;
-    list-style-type: none;
-}
 
-.container ul li {
-    margin-bottom: 20px;
-}
-
-.container ul li strong {
-    color: #424B54;
-    font-weight: 600;
+body {
     font-size: 16px;
 }
 
-.container ul li p {
-    color: #80A1C1;
-    font-size: 16px;
+.icon-link {
+    position: absolute;
+    padding-right: 2px;
+    top: 10px; 
+    right: 10px;
+    bottom: 10px;
 }
 
-.container ul li:last-child {
-    margin-bottom: 0;
+/* Media query for screens up to 768px wide */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* Add other styles for smaller screens here */
 }
 
+/* Media query for screens up to 600px wide */
+@media (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+
+    /* Add other styles for even smaller screens here */
+}
+
+/* Media query for screens wider than 1200px */
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+
+    /* Add other styles for wider screens here */
+}
