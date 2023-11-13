@@ -12,14 +12,16 @@
 
     <link href="javajam.css" rel="stylesheet">
 
+    <link rel="shortcut icon" href="facicon.ico">
+
 </head>
 
 <body>
     <div id="wrapper">
         <header>
-            <h1>JavaJam Coffee Bar</h1>
+            <h1><a href="index.html">JavaJam Coffee Bar</a></h1>
         </header>
-        <nav id="leftnav">
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
@@ -28,9 +30,9 @@
             </ul>
         </nav>
         <main>
-            <div class="homehero"></div>
+            <div id="homehero"></div>
             <h2>Follow the Winding Road to JavaJam</h2>
-            <p> We're a little out of the way, but take a drive in the country down Garrett Bay Road
+            <p> We&#8217;re a little out of the way, but take a drive in the country down Garrett Bay Road
                 to JavaJam today! Indulge in our locally roasted free-trade coffee and home-made pastries.
                 You'll feel right at home at JavaJam!
                 <br>
@@ -48,15 +50,20 @@
                 <li>Open Mic Night</li>
             </ul>
             <div>
-                12010 Garrett Bay Road <br>
-                Ellison Bay, WI 54210 <br>
-                888-555-5555 <br>
-                <br>
-            </div>
+                12010 Garrett Bay Road<br>
+                Ellison Bay, WI 54210<br>
+                <a id="mobile" href="tel:888-555-5555">888-555-5555</a><span id="desktop">888-555-5555</span><br><br>
+              </div>
         </main>
         <footer>
             Copyright &copy; 2023 JavaJam Coffee Bar <br>
-            <a href="mailto.gloria@hansen.com">gloria@hansen.com</a>
+            <a href="mailto:gloria@hansen.com">gloria@hansen.com</a>
+
+            <div>
+                <p id="dateupdate"></p>
+                <script src="js/dateupdate.js"></script>
+            </div>
+            
         </footer>
     </div>
 </body>
