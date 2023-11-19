@@ -12,14 +12,14 @@ header {
     padding-right: 20px;
 }
 
-header.sticky {
+/* .sticky {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
     transition: background-color 0.3s;
-}
+} */
 
 nav {
     padding-top: 20px;
@@ -49,18 +49,6 @@ li {
     background-color: #fffff2;
 }
 
-.image {
-    text-align: center;
-}
-
-.image img {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    max-width: 50%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
 
 h1 {
     text-align: left;
@@ -76,14 +64,17 @@ h3 {
     font-weight: bold;
 }
 
-h1, h2 {
+h1,
+h2 {
     margin-top: 10px;
     font-family: 'Playfair Display', serif;
     color: #678D58;
     font-size: 25px;
 }
 
-h1, h2, nav a {
+h1,
+h2,
+nav a {
     text-transform: uppercase;
 }
 
@@ -109,7 +100,8 @@ p {
     font-weight: lighter;
 }
 
-h3, p {
+h3,
+p {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: #424B54;
@@ -123,7 +115,7 @@ h3, p {
 .icon-link {
     position: absolute;
     padding-right: 2px;
-    top: 10px; 
+    top: 10px;
     right: 10px;
     bottom: 10px;
 }
@@ -131,4 +123,50 @@ h3, p {
 #heading,
 #paragraph {
     display: inline;
+}
+
+/* Carousel Styling */
+.carousel {
+    width: 50%; /* Set to 100% to take up the full width of the container */
+    margin: auto;
+    overflow: hidden; /* Uncomment to hide overflow and hide next images */
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #fffff2;
+    color: #424B54;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
